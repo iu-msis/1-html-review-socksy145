@@ -35,10 +35,10 @@
   <table class="table table-striped">
     <thead>
       <tr>
+        <th scope="col">#</th>
         <th scope="col">Title</th>
         <th scope="col">Author</th>
         <th scope="col">Year Published</th>
-        <th scope="col">Published</th>
         <th scope="col">Publisher</th>
         <th scope="col">Page Count</th>
         <th scope="col">MSRP</th>
@@ -56,7 +56,7 @@
 
       </tr>
       <tr>
-        <th scope="row">1</th>
+        <th scope="row">2</th>
         <td>The War on Normal People</td>
         <td>Andrew Yang</td>
         <td>2018</td>
@@ -66,7 +66,7 @@
 
       </tr>
       <tr>
-        <th scope="row">1</th>
+        <th scope="row">3</th>
         <td>The Call of the Wild</td>
         <td>Jack London</td>
         <td>1903</td>
@@ -76,7 +76,7 @@
 
       </tr>
       <tr>
-        <th scope="row">1</th>
+        <th scope="row">4</th>
         <td>Demons</td>
         <td>Fyodor Dostoyevsky</td>
         <td>1871</td>
@@ -87,9 +87,73 @@
       </tr>
     </tbody>
   </table>
+  <h3>Add Book</h3>
+  <form>
+  <div class="container">
+    
+    <div class="row">
+
+  
+    <div class="col" class="form-group">
+      <label for="exampleFormControlInput1">Title</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Book Title">
+    </div>
+    <div class="col" class="form-group">
+      <label for="exampleFormControlInput1">Author</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Book Author">
+    </div>
+    
+    </div>
   
   
+  </div>
+  <div class="container">
+    
+    <div class="row">
+
   
+    <div class="col" class="form-group">
+      <label for="exampleFormControlInput1">Publication Date</label>
+      <select class="form-control">
+        <option>Select Year</option>
+      </select>      
+    </div>
+    <div class="col" class="form-group">
+      <label for="exampleFormControlInput1">Publisher</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Book Publisher">
+    </div>
+    
+    </div>
+  
+  
+  </div>
+  <div class="container">
+    
+    <div class="row">
+
+  
+    <div class="col" class="form-group">
+      <label for="exampleFormControlInput1">Page #</label>
+      <select class="form-control">
+        <option>Page #</option>
+      </select>      
+    </div>
+    <div class="col" class="form-group">
+      <label for="exampleFormControlInput1">MSRP</label>
+      <select class="form-control">
+        <option>Price</option>
+      </select>
+      
+    </div>
+    
+    </div>
+  
+  
+  </div>
+  </form>
+
+  <button type="button" class="btn btn-primary btn-lg">Add</button>
+
 
 
 </div>
