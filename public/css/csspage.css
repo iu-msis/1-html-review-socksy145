@@ -1,0 +1,31 @@
+body {
+    background-color:lightblue;
+  }
+p {
+    color:white;
+    background-color: rgb(114, 114, 145);
+    border: 5px whitesmoke;
+    border-style: solid;
+}
+
+a{
+    color:violet;
+}
+
+.class1{
+background-color: wheat;
+border: 5px whitesmoke;
+border-style:solid;
+color:rgba(87, 56, 34, 0.733);
+}
+.class2{
+background-color: violet;
+border: 5px wheat;
+border-style: solid;
+color: rgba(87, 56, 34, 0.733);
+}
+
+/* nav{background-color: #f0f0f5;
+    color: black;
+    padding: 10px; 
+    } */
