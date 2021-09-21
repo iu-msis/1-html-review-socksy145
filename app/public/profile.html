@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+<!-- ctrplusslash -->
   <title>My Page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
@@ -38,7 +39,7 @@
   
   <h3 class="class1" style="text-align: center;"> My personal information at your disposal </h3>
   <div class="container">
-    <div class="row">
+    <div id="offerApp" class="row">
       <div class="col">
         <ul class="list-group">
           <li class="list-group-item">Name</li>
@@ -50,25 +51,26 @@
       </div>
       <div class="col">
         <ul class="list-group">
-          <li class="list-group-item">Molly Smith</li>
-          <li class="list-group-item">England</li>
-          <li class="list-group-item">1/1/1960</li>
-          <li class="list-group-item">61</li>
-          <li class="list-group-item"><a href="https://outlook.office.com/mail/">molly123@iu.edu</a></li>
+          <li class="list-group-item">{{ person.name.first }} {{ person.name.last }}</li>
+          <li class="list-group-item">{{ person.location.country}}</li>
+          <li class="list-group-item">{{ prettyBirthday }}</li>
+          <li class="list-group-item">{{ person.dob.age }}</li>
+          <li class="list-group-item"><a href="https://outlook.office.com/mail/">{{ person.email }}</a></li>
         </ul>        
       </div>
       <div class="col">
-        <a href="img/Molly.jpg">
-        <img src="img/Molly.jpg" alt="Image" width="250" height="250">
-        </a>
+        <a href="https://randomuser.me/"><img v-bind:src="person.picture.large" width=250 height=250></a>
         <p>Image Source: <a href="https://apersonalorganizer.com/author/helenaalkhasgmail-com/page/2/">apersonalorganizer.com</a></p>
       </div>
     </div>
   
-  
-  
 
 
 </div>
+   <!-- Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+
+   <script src="js/index.js"></script>
 </body>
 </html>
